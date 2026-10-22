@@ -5,15 +5,23 @@ Protein Explorer is a full-stack web application that allows users to search, ex
 The application combines biological data exploration with user authentication, personal favorites, user profiles, and a community forum.
 ## Screenshots
 - Homepage
+  
   <img width="930" height="726" alt="image" src="https://github.com/user-attachments/assets/a6ca0bd8-5f85-4bf4-b318-b74ffd320169" />
 
 - Search
+  
 <img width="935" height="901" alt="image" src="https://github.com/user-attachments/assets/2d0112bc-0237-4bf1-93f4-a468bffb3b7e" />
+
 - Protein Details
+  
   <img width="936" height="905" alt="image" src="https://github.com/user-attachments/assets/a0bb09a9-69ae-4dbd-9c8f-acccd6c5a7fe" />
+  
   - Amino acid sequence
+    
 <img width="935" height="902" alt="image" src="https://github.com/user-attachments/assets/48a4365d-986f-4ee9-b7c6-a6efc86e6a35" />
+
 - Forum
+  
   <img width="927" height="901" alt="image" src="https://github.com/user-attachments/assets/87242022-2ba0-449d-9fc8-727ee3db1a75" />
 
 
