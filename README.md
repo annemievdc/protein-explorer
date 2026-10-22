@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧬 Protein Explorer
+
+Protein Explorer is a full-stack web application that allows users to search, explore, and save information about proteins using the UniProt REST API.
+
+The application combines biological data exploration with user authentication, personal favorites, user profiles, and a community forum.
+## Screenshots
+- Homepage
+  <img width="930" height="726" alt="image" src="https://github.com/user-attachments/assets/a6ca0bd8-5f85-4bf4-b318-b74ffd320169" />
+
+- Search
+<img width="935" height="901" alt="image" src="https://github.com/user-attachments/assets/2d0112bc-0237-4bf1-93f4-a468bffb3b7e" />
+- Protein Details
+  <img width="936" height="905" alt="image" src="https://github.com/user-attachments/assets/a0bb09a9-69ae-4dbd-9c8f-acccd6c5a7fe" />
+  - Amino acid sequence
+<img width="935" height="902" alt="image" src="https://github.com/user-attachments/assets/48a4365d-986f-4ee9-b7c6-a6efc86e6a35" />
+- Forum
+  <img width="927" height="901" alt="image" src="https://github.com/user-attachments/assets/87242022-2ba0-449d-9fc8-727ee3db1a75" />
+
+
+
+## Features
+
+- **Protein Search:** Search for proteins using the UniProt REST API.
+- **Protein Details:** Explore protein information and amino acid sequences.
+- **User Authentication:** Register, log in, and manage user sessions using Supabase Authentication.
+- **Favorites:** Save proteins to a personal favorites collection.
+- **User Profiles:** View profiles and upload profile pictures.
+- **Community Forum:** Create posts, write comments, and interact with other users.
+- **Real-Time Features:** Supabase Realtime integration for forum interactions.
+- **User Roles:** User and administrator roles supported by the database.
+
+## Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| Next.js | Full-stack web framework |
+| React | Frontend development |
+| TypeScript | Type-safe programming |
+| Tailwind CSS | Styling and responsive layout |
+| Supabase | Authentication, PostgreSQL database, storage, and realtime |
+| UniProt REST API | Protein information and sequences |
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js and npm
+- A Supabase project
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   git clone https://github.com/annemievdc/protein-explorer.git
+   ```
 
-## Learn More
+2. Open the project directory:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   cd protein-explorer
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Install dependencies:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+4. Create a `.env.local` file in the project root and add your Supabase configuration:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+   NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=your_supabase_publishable_key
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+6. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+**Note:** Running the complete application requires a configured Supabase backend, including database tables, authentication, storage, and appropriate Row Level Security policies.
+
+## Project Status
+
+Protein Explorer is a portfolio project under active development.
+
+Future improvements include editable user profiles, enhanced administrator functionality, and improvements to protein search.
+
+## Author
+
+Developed by [annemievdc](https://github.com/annemievdc) as part of a software development portfolio.
